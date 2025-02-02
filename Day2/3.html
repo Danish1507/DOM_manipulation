@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>DOM-Query select</title>
+</head>
+<body>   
+     <img id="img1" src="https://www.koimoi.com/wp-content/new-galleries/2021/10/chris-hemsworths-first-thor-audition-was-rejected-by-marvel-001.jpg" alt="thor">
+     <!-- <img id="img2" src="https://akns-images.eonline.com/eol_images/Entire_Site/2017920/rs_600x600-171020123519-600.thor-ragnarok-4.102017.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top" alt="thor2"> -->
+
+
+     <button onclick="changeImage()"> Change Img</button>
+     <script>
+        console.log(document.querySelector('img')); // this will select the first occurance of the array no matter what we are using to select weather tag nam or class name or id or any other method query selector will select only first occurance 
+
+        // if we want to select all the element from the query selector we need to use the query selector all below
+        console.log(document.querySelectorAll('img'));
+       // <!-- after this we can access the elements with their id  -->
+     function changeImage(){
+            let img = document.getElementById("img1");
+            img.src = "https://media.gq.com/photos/56a15e4ed312acff191b8bf2/16:9/w_2560%2Cc_limit/chris-evans-captain-america.jpg";
+    }
+     </script>
+</body>
+</html>
