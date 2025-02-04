@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+  width: 70%;
+  height: 300px;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.carousel{
+    height: 270px;
+    width: 500%;
+    background-color: azure;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.slide{
+    width: 20%;
+    height: 100%;
+    background-color: blueviolet;
+    font-size: 100px;
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+}
